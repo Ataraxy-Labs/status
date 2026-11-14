@@ -1,0 +1,7 @@
+[
+  {"id": "site", "name": "Website", "url": "https://useland.dev/", "expect": 200},
+  {"id": "install", "name": "Installer", "url": "https://useland.dev/install", "expect": 200, "contains": "useland.dev/releases"},
+  {"id": "download", "name": "Downloads", "url": "https://useland.dev/releases/0.3.1/land-0.3.1-x86_64-unknown-linux-gnu.tar.gz", "expect": 200, "method": "HEAD"},
+  {"id": "api", "name": "API", "url": "https://api.useland.dev/v1/land/usage", "expect": 401},
+  {"id": "git", "name": "Git remote", "url": "https://api.useland.dev/git/", "expect": 401}
+]
