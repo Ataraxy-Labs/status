@@ -6,3 +6,5 @@ Every 5 minutes a GitHub Actions job (outside land's own machines) checks each m
 appends the result to `data/history/<id>.csv` on the `data` branch; `data/summary.json` is rebuilt from the whole
 history. A failed check is retried once after 20 s before it counts as down. Nothing is backfilled: history starts
 with the first check. GitHub's scheduler can delay or skip runs, so gaps in the data are gaps in checking, not outages.
+
+Monitors: see `monitors.json`. Run a check by hand with `gh workflow run check.yml -R Ataraxy-Labs/status`.
